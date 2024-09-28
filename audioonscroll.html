@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    
+    <Audio id="audio">
+        <source src="closer-chainsmokers-62670.mp3"> 
+    </Audio>
+
+    <script>
+
+        function scrollFun(){
+            var scrollValue=window.scrollY
+
+            if (scrollValue<500){
+                document.body.style.backgroundColor="transparent";
+            }
+            else if(scrollValue>500 && scrollValue<1000){
+                document.body.style.backgroundColor="tan";
+            }
+            else{
+            document.body.style.backgroundColor="skyblue";
+            }
+        }
+
+        let music=document.getElementById("audio");
+        function scrollmusic(){
+            var scrollValue=window.scrollY;
+
+            if(scrollValue>100){
+                music.play();
+            }
+            else{
+                music.pause();
+            }
+        }
+
+        window.onscroll=function(){
+            scrollFun();
+            scrollmusic();
+        };
+
+    </script>
+</body>
+</html>

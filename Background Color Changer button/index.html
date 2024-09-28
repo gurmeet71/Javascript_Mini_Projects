@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;            
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container button{
+            background-color: black;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px grey;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="ChangeColors()">ChangeBackgroundColor</button>
+    </div>
+
+    <script>
+        
+        var index = 0;
+        function ChangeColors(){
+            var colors = ["red","green","blue","orange","brown","aqua","pink"];
+            document.getElementsByTagName("body")[0].style.background = colors[index++];
+                    
+            if(index > colors.length-1)
+            {
+                index = 0;
+            }          
+        }
+        
+    </script>
+</body>
+</html>

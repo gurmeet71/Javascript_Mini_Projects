@@ -1,0 +1,38 @@
+body{
+    margin: 0;    
+    height: 100vh;  
+    overflow: hidden;  
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+.container{
+    width: 250px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.month-name{
+    background-color: rgb(205, 119, 15);
+    color: aliceblue;
+    margin: 0;
+    padding: 10px;
+    font-size: 27px;
+    font-weight: bold;
+}
+.week-day{
+    color: gray;    
+    font-size: 20px;
+}
+.day-number{
+    font-size: 45px;
+    margin: 0;
+    font-weight: bold;
+}
+.year{
+    color: gray;
+}
